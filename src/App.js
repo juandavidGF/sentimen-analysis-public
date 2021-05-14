@@ -10,10 +10,7 @@ import {
   Toolbar,
   Typography,
   IconButton,
-  Button
-
-
-} from '@material-ui/core'
+  Button} from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/core/styles';
 import { blue } from '@material-ui/core/colors';
@@ -35,7 +32,6 @@ function App() {
   const classes = useStyles();
 
   const url = {
-
     model: 'https://storage.googleapis.com/tfjs-models/tfjs/sentiment_cnn_v1/model.json',
     metadata: 'https://storage.googleapis.com/tfjs-models/tfjs/sentiment_cnn_v1/metadata.json'
 };
@@ -50,7 +46,6 @@ const [trimedText, setTrim] = useState("")
 const [seqText, setSeq] = useState("")
 const [padText, setPad] = useState("")
 const [inputText, setInput] = useState("")
-
 
 async function loadModel(url) {
   try {
@@ -70,7 +65,6 @@ async function loadMetadata(url) {
     console.log(err);
   }
 }
-
 
 const getSentimentScore =(text) => {
   console.log(text)
