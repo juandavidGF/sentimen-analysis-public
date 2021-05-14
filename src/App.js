@@ -95,7 +95,6 @@ const getSentimentScore =(text) => {
   return score;
 }
 
-
 useEffect(()=>{
   tf.ready().then(
     ()=>{
